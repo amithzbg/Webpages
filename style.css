@@ -1,0 +1,952 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+::selection {
+	background-color: #0cee72;
+}
+
+body {
+	font-family: "Armin Grotesk", "Helvetica Neue", Helvetica, sans-serif;
+	background-color: #faf9f7;
+}
+
+/* *********************Nav Starts ***************** */
+
+nav {
+	margin: auto;
+	padding-top: 2vmax;
+	width: 80%;
+	height: 15%;
+	/* background-color: red; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	padding: 0.2vmax;
+}
+
+.line {
+	width: 3vmax;
+	height: 0.2vmax;
+	background-color: black;
+	transition: 0.25s all;
+}
+
+.line:not(:nth-child(2)) {
+	margin-bottom: 0.5vmax;
+}
+
+.menu:hover .line {
+	background-color: #0cee72;
+}
+
+nav > ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 30vmax;
+	/* background-color: green; */
+}
+
+nav > ul img {
+	width: 7vmax;
+}
+
+nav > ul > li > a {
+	font-size: 1.2vmax;
+	text-decoration: none;
+	color: rgb(104, 102, 102);
+	transition: 0.25s all;
+}
+
+nav > ul > li > a:hover {
+	color: #0cee72;
+}
+
+.nav-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav-button > button {
+	font-size: 1.2vmax;
+	padding: 0.8vmax 2.3vmax;
+	border-radius: 30px;
+	margin-top: 2vmax;
+	margin-bottom: 1vmax;
+	background-color: transparent;
+	color: rgb(104, 102, 102);
+	border: 1px solid rgba(0, 0, 0, 0.425);
+	transition: 0.25s all;
+}
+
+.nav-button > button:hover {
+	background-color: #0cee72;
+	border-color: transparent;
+	color: #fff;
+}
+
+.nav-button a {
+	text-decoration: none;
+	color: rgb(104, 102, 102);
+	font-size: 0.9vmax;
+	transition: 0.25s all;
+}
+
+.nav-button a:hover {
+	color: #0cee72;
+}
+
+/* *********************Nav Ends ***************** */
+
+/* *********************Page 1 Satrts ***************** */
+
+.firstpage {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	position: relative;
+	margin-top: 2vmax;
+}
+
+.firstpage > h1 {
+	font-size: 9vmax;
+	line-height: 7.5vmax;
+	position: absolute;
+	top: 2vmax;
+	left: 9vmax;
+	font-weight: 600;
+}
+
+.firstpagecontent {
+	display: flex;
+	margin: auto;
+	width: 90vw;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: 85vh;
+}
+
+.firstpagecontent > img {
+	width: 50vw;
+	margin-bottom: vmax;
+	border-radius: 10px;
+}
+
+.leftarrow,
+.rightarrow {
+	height: 1vmax;
+	width: 5vmax;
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-self: center;
+	transition: 0.5s all;
+}
+
+.leftarrow {
+	background-image: url(./leftarrow.svg);
+}
+
+.leftarrow:hover {
+	transform: translateX(-1vmax);
+}
+
+.rightarrow {
+	background-image: url(./rightarrow.svg);
+}
+
+.rightarrow:hover {
+	transform: translateX(1vmax);
+}
+
+.firstpagetitle h2 {
+	font-size: 4vmax;
+	font-weight: lighter;
+	line-height: 3.5vmax;
+	margin-bottom: 2vmax;
+}
+
+.firstpagebutton {
+	margin-bottom: 1vmax;
+}
+
+.firstpagebutton > button {
+	background-color: transparent;
+	border: none;
+	font-size: 2vmax;
+	color: #0cee72;
+	transition: 0.5s all;
+}
+
+.firstpagebutton > img {
+	transition: 0.5s all;
+}
+
+.firstpagebutton:hover img {
+	transform: translateX(0.5vmax) scale(1.1);
+}
+
+.firstpagebutton:hover button {
+	color: black;
+}
+
+/* *********************Page 1 Ends ***************** */
+
+/* *********************Page 2 Satrts ***************** */
+
+.secondpage {
+	width: 100%;
+	height: 75%;
+	display: flex;
+	position: relative;
+}
+
+.secondpage > h1 {
+	font-size: 5vmax;
+	line-height: 5.5vmax;
+	position: absolute;
+	/* top: 2vmax; */
+	right: 11vmax;
+	font-weight: 500;
+}
+
+.secondpagecontent {
+	display: flex;
+	align-items: center;
+	min-height: 35vh;
+	margin: auto;
+	width: 90vw;
+	/* background-color: red; */
+}
+
+.secondpagevideo1 {
+	height: 35vh;
+	width: 32vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.secondpagecontent video {
+	transform: scale(0.26);
+}
+
+.secondpagetitle,
+.secondpagetitle2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 35vh;
+	margin-left: 2vmax;
+}
+
+.secondpageleftarrow {
+	background-image: url(./leftarr.svg);
+	height: 4vmax;
+	width: 4.4vmax;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 0.5s all;
+}
+
+.secondpagecontent:hover .secondpageleftarrow {
+	transform: rotate(0deg) translateX(-1vmax);
+	color: #0cee72;
+}
+
+.secondpagetitle h1 {
+	font-size: 3.5vmax;
+	line-height: 2.8vmax;
+	font-weight: 300;
+}
+
+.secondpagetitle p {
+	font-size: 2vmax;
+}
+
+.secondpagebutton > button {
+	background-color: transparent;
+	border: none;
+	font-size: 2vmax;
+	color: black;
+	transition: 0.5s all;
+}
+
+.secondpagebutton > img {
+	transition: 0.5s all;
+	transform: scale(0.6) rotate(-30deg);
+}
+
+.secondpagebutton:hover img {
+	transform: scale(0.6) rotate(-30deg) translate(9px, -5px);
+}
+
+.secondpagebutton:hover button {
+	color: #0cee72;
+}
+
+.wheelchair {
+	border: 1px solid black;
+	border-radius: 50%;
+	width: 3.5vmax;
+	height: 3.5vmax;
+	position: relative;
+	margin-top: 4.5vmax;
+	margin-left: 3vmax;
+}
+
+.wheelchair:hover {
+	color: #0cee72;
+	fill: #0cee72;
+}
+
+.wheelchair > img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0.5vmax;
+}
+
+.wheelchair::after {
+	content: "A wheelchair ramp can be permanent, semi-permanent or portable. Permanent ramps are designed to be bolted or otherwise attached in place.";
+	width: 24vw;
+	height: 12vh;
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	background-color: #0cee72;
+	border-radius: 5px;
+	top: -4vmax;
+	left: 3.5vmax;
+	transition: 0.5s all;
+	opacity: 0;
+	transition: 1s ease-in-out;
+}
+
+.wheelchair:hover::after {
+	opacity: 1;
+	transition: 1s;
+	/* color: #0cee72; */
+}
+
+/* ****************************secondpage end************************** */
+
+/* *******************************thirdpage starts******************************** */
+
+.thirdpage {
+	width: 98vmax;
+	height: 70%;
+	display: flex;
+}
+
+.thirdpagerightarrow {
+	background-image: url(./rightarr.svg);
+	height: 4vmax;
+	width: 4.4vmax;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 0.5s all;
+	margin-top: 2.5vmax;
+}
+
+.thirdpage:hover .thirdpagerightarrow {
+	transform: rotate(0deg) translateX(1vmax);
+	color: #0cee72;
+}
+
+.thirdmain {
+	margin-left: 17vmax;
+	justify-content: space-between;
+}
+
+.thirdpagecontent {
+	margin-top: 5vmax;
+	font-size: 3.1vmax;
+	letter-spacing: 0.2vmax;
+	font-weight: 100;
+}
+
+.thirdpagesmall {
+	margin-top: 5vmax;
+	font-size: 1.3vmax;
+	font-weight: 100;
+}
+
+.spss {
+	width: 15vmax;
+	height: 15vmax;
+	margin-top: 15vmax;
+}
+
+.circle {
+	margin-left: 4vmax;
+}
+
+.thirdpagevideo1 {
+	height: 35vh;
+	width: 32vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	border-radius: 10px;
+	margin-top: 5vmax;
+	margin-left: 5vmax;
+}
+
+.circle {
+	width: 3.5vmax;
+	height: 3.5vmax;
+	position: relative;
+	background-image: url(./stair.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 4vmaxvmax;
+}
+
+.circle > img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0.5vmax;
+	border: 1px solid black;
+}
+
+.circle::after {
+	content: "This entrance is a staircase. For ramp access, use the Noble St. entrance.mp can be permanent, semi-permanent or portable. Permanent ramps are designed to be bolted or otherwise attached in place.";
+	width: 28vw;
+	height: 14vh;
+	color: #fff;
+	position: absolute;
+	text-align: left;
+	background-color: #0cee72;
+	border-radius: 5px;
+	top: -4vmax;
+	left: 4vmax;
+	transition: 0.5s all;
+	opacity: 0;
+	transition: 1s ease-in-out;
+}
+
+.circle:hover::after {
+	opacity: 1;
+	transition: 1s;
+}
+
+.thirdpagebutton {
+	border: 2px solid black;
+}
+
+.thirdpagebutton {
+	background-color: transparent;
+	border: none;
+	font-size: 1.5vmax;
+	color: black;
+	transition: 0.5s all;
+	margin-top: 5vmax;
+	margin-left: 3.4vmax;
+	font-weight: 200;
+}
+
+.thirdpagebutton > button {
+	background-color: transparent;
+	border: none;
+	font-size: 1.3vmax;
+}
+
+.thirdpagebutton > img {
+	transition: 0.5s all;
+	transform: scale(0.6) rotate(-30deg);
+}
+
+.thirdpagebutton:hover img {
+	transform: scale(0.6) rotate(-30deg) translate(9px, -5px);
+}
+
+.thirdpagebutton:hover button {
+	color: #0cee72;
+}
+
+/* *******************************third page ends****************************** */
+/* *******************************fourth page starts****************************** */
+
+.fourthpage {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.fourthpage > h1 {
+	font-size: 4.5vmax;
+	margin-left: 10vmax;
+	margin-top: 5vmax;
+}
+
+.greentext {
+	color: #0cee72;
+	transition: 0.5s all;
+}
+.greentext:hover {
+	background: url(./tourscene.jpg);
+	width: 45vmax;
+}
+
+.textandbutton {
+	display: flex;
+	align-items: center;
+	color: rgb(88, 79, 79);
+}
+
+.textandbutton > p {
+	margin-left: 10vmax;
+	margin-top: 10vmax;
+	font-size: 2vmax;
+}
+
+.textandbutton > button {
+	width: 10.5vmax;
+	height: 3.5vmax;
+	border: 2px solid rgb(88, 79, 79);
+	border-radius: 30px;
+	color: rgb(88, 79, 79);
+	background-color: transparent;
+	margin-left: 2.5vmax;
+	margin-top: 10vmax;
+	font-size: 1.5vmax;
+	transition: 0.5s;
+	font-weight: 200;
+}
+
+.textandbutton > button:hover {
+	border-color: #0cee72;
+	background-color: #0cee72;
+	color: #ffffff;
+}
+
+.fifthcontent {
+	display: flex;
+}
+
+.small > h1 {
+	margin-left: 1vmax;
+	margin-top: 4vmax;
+	font-size: 3.5vmax;
+	font-weight: 100;
+}
+
+.small > p {
+	margin-top: 2vmax;
+	margin-left: 1vmax;
+}
+
+/* *******************************fourth page ends****************************** */
+/* *******************************fifth page starts****************************** */
+
+.fifthpage {
+	width: 100%;
+	height: 100%;
+}
+.firstvideo {
+	width: 24vmax;
+	/* height: 40vmax; */
+	margin-left: 10vmax;
+}
+
+.secondvideo {
+	margin-top: 25vmax;
+	border-radius: 10px;
+	margin-left: 6.5vmax;
+}
+
+/* *******************************fifth page ends****************************** */
+
+/* *******************************sixth page starts****************************** */
+
+.sixthpage {
+	width: 100%;
+	height: 70%;
+}
+
+.sixthpagecontent {
+	display: flex;
+}
+
+.firstpart {
+	margin-top: 5vmax;
+	font-size: 2vmax;
+	margin-left: 10vmax;
+	color: rgb(92, 83, 83);
+	letter-spacing: 0.1vmax;
+}
+
+.learnwalaline {
+	width: 40%;
+	margin-top: 5vmax;
+	margin-left: 10vmax;
+	font-size: 1.2vmax;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.learnwalaline:hover {
+	color: #0cee72;
+}
+
+.learnwalaline > img {
+	transition: 0.8s;
+}
+
+.learnwalaline:hover img {
+	transform: translate(0.5vmax);
+}
+
+.sixthpagerightside {
+	margin-left: 15vmax;
+	margin-top: 1vmax;
+}
+
+.thecut {
+	font-size: 3.5vmax;
+}
+
+.callo {
+	margin-top: 1vmax;
+}
+
+/* ******************************sixth page ends****************************** */
+/* *******************************seventh page starts****************************** */
+
+.seventhpage {
+	width: 100%;
+	height: 50%;
+}
+
+.tunnel {
+	display: flex;
+}
+
+.tunnel > video {
+	margin-left: 35%;
+}
+.tunneltext {
+	font-size: 3.3vmax;
+	margin-top: 4vmax;
+	color: rgb(70, 61, 61);
+	margin-left: 2vmax;
+}
+
+.tunnelsmalltext {
+	margin-left: 1.8vmax;
+}
+
+/* *******************************seventh page ends****************************** */
+/* *******************************eighth page starts****************************** */
+
+.eigthpage {
+	width: 100%;
+	height: 80%;
+	color: black;
+	text-decoration: none;
+}
+.eightpagecontent > a {
+	text-decoration: none;
+}
+
+.eightpagemaincontent {
+	display: flex;
+}
+
+.whitepart {
+	width: 70%;
+	background-color: white;
+	margin-top: 1vmax;
+}
+
+.img {
+	margin-left: 10vmax;
+}
+
+.eightpagecontent {
+	margin-left: 5vmax;
+	/* margin-top: 1.5vmax; */
+	text-decoration: none;
+}
+
+.date {
+	font-size: 1.5vmax;
+	color: black;
+}
+
+.threemiles {
+	margin-top: 1.5vmax;
+	font-size: 3vmax;
+	color: black;
+}
+
+.joinfriends {
+	font-size: 1.5vmax;
+	margin-top: 1.5vmax;
+	color: black;
+}
+
+.details {
+	font-size: 1.5vmax;
+	margin-top: 2.5vmax;
+	color: black;
+	background-color: transparent;
+	border: none;
+	transition: 0.5s all ease;
+}
+
+.details:hover {
+	color: #0cee72;
+}
+
+.details:hover img {
+	transform: translateX(3px);
+}
+
+/* ******************************eigthpage end********************************** */
+
+/* ******************************ninthpage starts********************************** */
+
+.ninthpage {
+	width: 100%;
+	height: 60%;
+	display: flex;
+	gap: 2.5vmax;
+}
+
+.sidebar {
+	width: 5vmax;
+	height: 28vmax;
+	margin-top: -6vmax;
+	letter-spacing: -0.65vmax;
+	font-size: 2vmax;
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+	transform: rotate(180deg);
+}
+
+.readmore {
+	background-color: transparent;
+	border: none;
+	margin-top: 1vmax;
+}
+
+.firstimage {
+	transition: 0.2s all;
+}
+
+.firstimage:hover {
+	transform: translateY(-10px);
+}
+
+.secondimage {
+	transition: 0.2s all;
+}
+
+.secondimage:hover {
+	transform: translateY(-10px);
+}
+.thirdimage {
+	transition: .2s all;
+}
+
+.thirdimage:hover {
+	transform: translateY(-10px);
+}
+.fourthimage {
+	transition: .2s all;
+}
+
+.fourthimage:hover {
+	transform: translateY(-10px);
+}
+.fifthimage {
+	transition: .2s all;
+}
+
+.fifthimage:hover {
+	transform: translateY(-10px);
+}
+.readmore > img {
+	transform: rotate(-30deg);
+	transition: 1.5s all;
+}
+
+.a:hover .readmore > img {
+	transform: rotate(-30deg) translate(9px, -5px);
+}
+
+.a:hover .readmore {
+	color: #0cee72;
+}
+
+.b:hover .readmore > img {
+	transform: rotate(-30deg) translate(9px, -5px);
+}
+
+.b:hover .readmore {
+	color: #0cee72;
+}
+
+.c:hover .readmore > img {
+	transform: rotate(-30deg) translate(9px, -5px);
+}
+
+.c:hover .readmore {
+	color: #0cee72;
+}
+
+.d:hover .readmore > img {
+	transform: rotate(-30deg) translate(9px, -5px);
+}
+
+.d:hover .readmore {
+	color: #0cee72;
+}
+.e:hover .readmore > img {
+	transform: rotate(-30deg) translate(9px, -5px);
+}
+
+.e:hover .readmore {
+	color: #0cee72;
+}
+
+/* ************************** ninthpage end ***************************** */
+/* ************************** tenthpage starts ***************************** */
+
+.tenthpage {
+	width: 100%;
+	height: 40%;
+	background-color: #0cee72;
+}
+
+.tenthpagecontent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 8vmax;
+}
+
+.email {
+	width: 100%;
+	font-size: 2.2vmax;
+	margin-top: 2vmax;
+	border: none;
+	background-color: #0cee72;
+	border-bottom: 2px solid rgb(179, 153, 153);
+	margin-left: -5vmax;
+	outline: none;
+}
+
+.tenthpagerightarrow {
+	background-image: url(./rightarr.svg);
+	height: 2vmax;
+	width: 2.4vmax;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 0.5s all;
+	margin-top: 2.5vmax;
+}
+
+.emailarrow {
+	transition: 1.5s all;
+	display: flex;
+}
+
+.emailarrow:hover .tenthpagerightarrow {
+	transform: rotate(0deg) translateX(0.8vmax);
+	color: #0cee72;
+}
+
+/* ***********************tenthpage end*********************** */
+/* ***********************eleventhpage start*********************** */
+.eleventhpage {
+	width: 100%;
+	height: 70%;
+}
+
+.eleventhpagecontent {
+	display: flex;
+	justify-content: space-around;
+	background-color: black;
+	color: white;
+}
+
+.movinglogo {
+	height: 15vmax;
+}
+
+.firstpart > p {
+	margin-left: -10vmax;
+	margin-top: 8.8vmax;
+	color: #faf9f7;
+	font-size: 1.2vmax;
+}
+
+.secondpart {
+	margin-top: 2vmax;
+}
+
+.free {
+	margin-top: 2.5vmax;
+	font-size: 2vmax;
+}
+
+.entrance {
+	margin-top: 3vmax;
+}
+.nbroad {
+	margin-top: 2.5vmax;
+	font-size: 2vmax;
+}
+
+.translations {
+	margin-top: 3vmax;
+}
+
+.espanol {
+	margin-top: 2.5vmax;
+	font-size: 2vmax;
+}
+
+.thirdpart {
+	margin-top: 2vmax;
+	margin-left: 2vmax;
+}
+
+.friends {
+	margin-top: 2.5vmax;
+	font-size: 2vmax;
+}
+
+.office {
+	margin-top: 3vmax;
+}
+.vinestreet {
+	margin-top: 2.5vmax;
+	font-size: 2vmax;
+}
+
+.follow {
+	margin-top: 3vmax;
+}
